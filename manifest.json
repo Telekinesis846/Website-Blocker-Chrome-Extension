@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Website Blocker",
+  "description": "Simple Website Blocker",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "icons/no_globe.svg"
+  },
+  "background": {
+    "service-worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

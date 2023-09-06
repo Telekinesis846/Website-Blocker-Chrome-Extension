@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      :root {
+        width: 20rem;
+        height: 15rem;
+      }
+
+      body {
+        background-color: black;
+        color: wheat;
+        text-align: center;
+      }
+
+      h1 {
+        color: aquamarine;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: cyan !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Website Blocker</h1>
+    <button class="add">Add website</button>
+    <input type="text" class="add" placeholder="https://example.com" />
+    <div class="websites">
+      <div class="item">
+        <a href="https://example.com" target="_blank">Example.com</a>
+        <button type="button">Remove</button>
+      </div>
+    </div>
+  </body>
+</html>
